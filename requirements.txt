@@ -1,0 +1,14 @@
+# Core build tools for installing packages
+setuptools>=60.0.0
+wheel
+
+pandas
+scikit-learn
+torch
+transformers
+
+# Required by many Hugging Face tokenizers
+sentencepiece
+
+# For reading/writing Parquet files
+pyarrow
