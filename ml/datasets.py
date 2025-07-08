@@ -23,9 +23,8 @@ class FakeNewsDataset(Dataset):
                 "Please ensure you have run the preprocessing and data preparation scripts."
             )
 
-        # Drop rows with missing text
-        self.data.dropna(subset=['text'], inplace=True)
-        self.data = self.data.reset_index(drop=True)
+        # --- Data Cleaning ---
+        self.data = self.data.dropna(subset=['text']).reset_index(drop=True)
         
         self.tokenizer = tokenizer
         self.max_length = max_length

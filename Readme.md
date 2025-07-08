@@ -60,12 +60,7 @@ pip install -r requirements.txt
 
 The preprocessing script requires two datasets. You must download them manually and place them in the `data/raw/` directory.
 
-**Create the necessary directories:**
-
-```bash
-mkdir -p data/raw/kaggle_fake_news
-mkdir -p data/raw/liar
-```
+**First, create the necessary directories inside the `data/raw/` folder.**
 
 **a. Kaggle Fake and Real News Dataset:**
 *   **Download from:** https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
