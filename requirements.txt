@@ -4,7 +4,6 @@ wheel
 
 pandas
 scikit-learn
-torch
 transformers
 
 # Required by many Hugging Face tokenizers

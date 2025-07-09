@@ -49,7 +49,13 @@ python -m venv .venv
 
 ### 3. Install Dependencies
 
-Install all the required Python packages using the `requirements.txt` file.
+First, install PyTorch with CUDA support. This command is for Windows with a modern NVIDIA GPU. For other platforms, please see the official PyTorch website.
+
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+Next, install the remaining packages from the `requirements.txt` file.
 
 ```bash
 pip install --upgrade pip
@@ -60,7 +66,12 @@ pip install -r requirements.txt
 
 The preprocessing script requires two datasets. You must download them manually and place them in the `data/raw/` directory.
 
-**First, create the necessary directories inside the `data/raw/` folder.**
+**Create the necessary directories:**
+
+```bash
+mkdir -p data/raw/kaggle_fake_news
+mkdir -p data/raw/liar
+```
 
 **a. Kaggle Fake and Real News Dataset:**
 *   **Download from:** https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
