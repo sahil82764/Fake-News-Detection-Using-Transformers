@@ -11,3 +11,23 @@ sentencepiece
 
 # For reading/writing Parquet files
 pyarrow
+
+# Core ML/DL Framework
+torch
+transformers
+accelerate
+
+# Data Handling & Scientific Computing
+pandas
+numpy
+scikit-learn
+pyarrow
+
+# API Framework
+fastapi
+uvicorn[standard]
+
+# Utilities
+tqdm
+python-dotenv
+sentencepiece
