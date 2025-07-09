@@ -2,16 +2,6 @@
 setuptools>=60.0.0
 wheel
 
-pandas
-scikit-learn
-transformers
-
-# Required by many Hugging Face tokenizers
-sentencepiece
-
-# For reading/writing Parquet files
-pyarrow
-
 # Core ML/DL Framework
 torch
 transformers
@@ -27,7 +17,7 @@ pyarrow
 fastapi
 uvicorn[standard]
 
-# Utilities
+# Utilities & Tokenizers
 tqdm
 python-dotenv
 sentencepiece
